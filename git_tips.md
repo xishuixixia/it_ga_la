@@ -130,13 +130,12 @@ git stash
 * 临时任务处理完后继续之前未完的工作
 ```
 git stash pop
-```
 或者  
-```
-git stash apply
-```
-pop 不保留 stash，apply 保留 stash
 
+git stash apply
+
+pop 不保留 stash，apply 保留 stash
+```
 * 查看所有 stash
 ```
 git stash list
