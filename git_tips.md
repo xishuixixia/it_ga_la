@@ -11,7 +11,7 @@ git config --local user.name '你的用户名'
 git config --local user.email '你的邮箱'
 ```
 
-#### 查看 Git 的配置
+#### 查看 Git 配置
 * 查看 global 类型的配置项 
 ```
 git config --global --list  
@@ -22,7 +22,7 @@ git config --global --list
 git config --local --list  
 ```
 
-#### 清除 Git 的配置
+#### 清除 Git 配置
 * 清除 global 类型的配置项   
 ```
 git config --unset  --global 某个配置项 
@@ -40,6 +40,7 @@ git status
 ```
 
 * 查看当前工作在哪个分支上 
+
 ```
 git branch -v  
 ```
@@ -119,7 +120,8 @@ git difftool 提交A 提交B
 git ls-files --others
 ```
 
-#### 加塞临时任务的处理
+#### 加塞临时任务
+
 * 把未处理完的变更先保存到 stash 中
 ```
 git stash
@@ -162,7 +164,8 @@ git stash pop stash@{数字n}
 后续可能需要处理冲突，直到 rebase 结束
 ```
 
-#### 查看变更的历史
+#### 查看变更历史
+
 * 当前分支各个 commit 用一行显示
 ```
 git log --oneline
@@ -279,7 +282,8 @@ git rebase B分支 A分支
 git mergetool
 ```
 
-#### 和远端的交互
+#### 远程仓库
+
 * 列出所有 remote
 ```
 git remote -v
@@ -300,34 +304,34 @@ git remote remove remote的名称
 git remote rename 旧名称 新名称
 ```
 
-* 把远端所有分支和标签的变更都拉到本地
+* 拉取远程所有分支和标签的变更到本地
 ```
 git fetch remote
 ```
 
-* 把远端分支的变更拉到本地,且 merge 到本地分支
+* 拉取变更到本地，且 merge 到本地分支
 ```
 git pull remote名称 分支名
 ```
 
-* 把本地分支 push 到远端
+* 把本地分支 push 到远程
 ```
 git push remote名称 分支名
 ```
 
-* 删除远端分支
+* 删除远程分支
 ```
-git push remote --delete 远端分支名 
+git push remote --delete 远程分支名 
 或者
-git push remote :远端分支名
+git push remote :远程分支名
 ```
 
-* 向远端提交指定标签
+* 向远程提交指定标签
 ```
 git push remote 标签名
 ```
 
-* 向远端提交所有标签
+* 向远程提交所有标签
 ```
 git push remote --tags
 ```
