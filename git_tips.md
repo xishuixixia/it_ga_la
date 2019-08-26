@@ -1,14 +1,14 @@
 #### Git 最小配置
 * 某账号下所有的 Git 仓库都有效
 ```
-git config --global user.name '您的名称' 
-git config --global user.email '您的Email'
+git config --global user.name '你的用户名' 
+git config --global user.email '你的邮箱'
 ```
 
 * 只对当前 Git 仓库有效 
 ```
-git config --local user.name '您的名称'
-git config --local user.email '您的Email'
+git config --local user.name '你的用户名'
+git config --local user.email '你的邮箱'
 ```
 
 #### 查看 Git 的配置
