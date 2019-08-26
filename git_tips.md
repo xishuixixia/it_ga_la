@@ -131,11 +131,11 @@ git stash
 ```
 git stash pop
 ```
-  > 或者  
+或者  
 ```
 git stash apply
 ```
-  > pop 不保留 stash，apply 保留 stash
+pop 不保留 stash，apply 保留 stash
 
 * 查看所有 stash
 ```
